@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Novikov Legacy - Фонд Культурного Наследия</title>
+    <meta property="og:title" content="Novikov Legacy - Фонд Культурного Наследия" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Merriweather;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container10">
+        <navigation-wrapper class="navigation-wrapper">
+          <div class="navigation-container1">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <script src="./navigation.js" defer=""></script>
+              </div>
+            </div>
+            <nav id="navigation" class="navigation">
+              <div class="navigation-container">
+                <div class="navigation-brand">
+                  <a href="#hero">
+                    <div aria-label="Вернуться на главную страницу" class="navigation-logo">
+                      <span class="navigation-logo-text">Novikov Legacy</span>
+                      <span class="navigation-logo-subtitle">
+                        Фонд Художников Новиковых
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="navigation-content">
+                  <ul id="navigationMenu" class="navigation-menu">
+                    <li class="navigation-item">
+                      <a href="#hero">
+                        <div class="navigation-link"><span>Главная</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#founder">
+                        <div class="navigation-link"><span>Руководитель фонда</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#about">
+                        <div class="navigation-link"><span>О Фонде</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#exhibitions">
+                        <div class="navigation-link">
+                          <span>Проекты</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#gallery">
+                        <div class="navigation-link"><span>Галерея</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#team">
+                        <div class="navigation-link"><span>Наша команда</span></div>
+                      </a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#documents">
+                        <div class="navigation-link"><span>Документы</span></div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button
+                    id="navigationToggle"
+                    aria-label="Открыть меню навигации"
+                    aria-expanded="false"
+                    class="navigation-toggle"
+                  >
+                    <span id="navigationMenuIcon" class="navigation-toggle-menu">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 5h16M4 12h16M4 19h16"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span id="navigationCloseIcon" class="navigation-toggle-close">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M18 6L6 18M6 6l12 12"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </navigation-wrapper>
+
+        <script src="./homepage-interactions.js" defer=""></script>
+
+        <section id="hero" class="hero-section1">
+          <div class="hero-content2">
+            <div class="hero-artwork-display">
+              <div class="artwork-frame">
+                <img
+                  src="999.png"
+                  alt="Classical Novikov artwork"
+                  class="featured-artwork"
+                />
+              </div>
+            </div>
+            <div class="hero-text-area">
+              <h1 class="hero-title">Фонд творческого наследия художников Новиковых</h1>
+              <h2 class="hero-subtitle">Миссия фонда</h2>
+              <p class="hero-description1">
+                Сохранение и популяризация творческого наследия семьи художников Новиковых, развитие интереса к русской живописи и культуре России.
+              </p>
+              <div class="hero-actions1">
+                <a href="#exhibitions" class="btn btn-primary">Узнать даты</a>
+                <button class="btn btn-outline">Поддержать проекты</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Новая секция с документами -->
+<section id="documents" class="documents-section">
+  <div class="documents-container">
+    <div class="section-header">
+      <h2 class="section-title">Документы</h2>
+      <p class="section-subtitle">
+        Официальные документы и материалы фонда
+      </p>
+    </div>
+    <div class="documents-grid">
+      <a href="#" class="document-button">
+        <div class="document-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+              <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zm-5-9v6m-3-3h6"/>
+            </g>
+          </svg>
+        </div>
+        <h3 class="document-title">Отчеты</h3>
+        <p class="document-description">Годовые отчеты о деятельности фонда</p>
+      </a>
+      
+      <a href="ystav.PDF" class="document-button" target="_blank">
+        <div class="document-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+              <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zm-8-4h6m-6-4h6"/>
+            </g>
+          </svg>
+        </div>
+        <h3 class="document-title">Устав</h3>
+        <p class="document-description">Учредительные документы фонда</p>
+      </a>
+      
+      <a href="gratitude.html" class="document-button">
+        <div class="document-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+              <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zm-5-9l-3 3l3 3m3-3H8"/>
+            </g>
+          </svg>
+        </div>
+        <h3 class="document-title">Благодарности,сертификаты и дипломы</h3>
+        <p class="document-description">Благодарственные письма и отзывы</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+        <section id="founder" class="founder-section">
+          <div class="founder-container">
+            <div class="founder-content">
+              <h2 class="section-title">Руководитель фонда</h2>
+              <h3 class="founder-name">Ксения Казакова-Новикова</h3>
+              <p class="section-content">
+                Внучка и дочь художников семьи Новиковых, Ксения посвятила свою жизнь сохранению 
+                и популяризации творческого наследия своей семьи. Под ее руководством фонд 
+                проводит выставки, мастер-классы и благотворительные мероприятия, продолжая 
+                культурную миссию трех поколений художников.
+              </p>
+              <p class="section-content">
+                "Искусство — это мост между поколениями. Моя задача — сохранить этот мост 
+                для будущих ценителей русской живописи."
+              </p>
+            </div>
+            <div class="founder-visual">
+              <div class="artwork-frame vertical-frame">
+                <img
+                  src="4455.jpg"
+                  alt="Ксения Казакова-Новикова - владелец фонда"
+                  class="featured-artwork"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="about" class="about-section">
+          <div class="about-container">
+            <div class="about-content">
+              <h2 class="section-title">О Фонде</h2>
+              <p class="section-content">
+                Фонд творческого наследия художников Новиковых
+                образован в 2017 г. с целью сохранения культурного наследия и популяризации творчества семьи 3х российских художников:
+              </p>
+              <p class="section-content">
+              -Новикова Надежда Михайловна (1929 - 2015 гг.)
+              </p>
+              <p class="section-content">
+              -Новиков Анатолий Семенович (1926 - 1994гг.)
+              </p>
+              <p class="section-content">
+              -Новиков Александр Анатольевич (1953 - 2001 гг.)
+              </p>
+            </div>
+            <div class="about-visual">
+              <div class="image-collage">
+                <img
+                  src="1.jpg"
+                  alt="Artist in studio with Renaissance paintings"
+                  class="collage-main"
+                />
+                <img
+                  src="2.jpg"
+                  alt="Art studio with military portrait"
+                  class="collage-small"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="exhibitions" class="exhibitions-section1">
+          <div class="section-container">
+            <div class="section-header1">
+              <h2 class="section-title">Текущие и предстоящие проекты</h2>
+            </div>
+            <div class="exhibitions-grid">
+
+              <article class="exhibition-card">
+                <div class="upcoming-badge"><span>Анонс</span></div>
+                <div class="card-image">
+                  <img
+                    src="22.png"
+                    alt="Диалог поколений exhibition"
+                    class="exhibition-image"
+                  />
+                  <div class="card-overlay">
+                    <div class="exhibition-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="M8 2v4m8-4v4"></path>
+                          <rect
+                            width="18"
+                            height="18"
+                            x="3"
+                            y="4"
+                            rx="2"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="exhibition-title">«День пожилого человека»</h3>
+                  <div class="exhibition-details">
+                    <div class="exhibition-date">
+                      <span class="date-label">Дата: </span>
+                      <span class="date-value">
+                        3 октября 2025г
+                      </span>
+                    </div>
+                    <div class="exhibition-venue">
+                      <span class="venue-label">Место:</span>
+                      <span class="venue-value">
+                        ГБУ Научно-практический геронтопсихиатрический центр ДТСЗН
+                      </span>
+                    </div>
+                  </div>
+                  <p class="exhibition-description">
+                    Занятия по арт-терапии приносят пожилым людям значительную пользу благодаря своей уникальной способности воздействовать одновременно на эмоциональное состояние, когнитивные функции и физическое здоровье.
+                  </p>
+                  <a href="https://nkocenter.ru/event/view/radost-tvorchestva-dlya-pozhilyh-serdec" target="_blank">
+                    <button class="btn btn-secondary">Узнать больше</button>
+                  </a>
+                </div>
+              </article>
+
+              <article class="exhibition-card upcoming">
+                <div class="upcoming-badge"><span>Анонс</span></div>
+                <div class="card-image">
+                  <img
+                    src="12.PNG"
+                    alt="International project"
+                    class="exhibition-image"
+                  />
+                  <div class="card-overlay">
+                    <div class="exhibition-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="M8 2v4m8-4v4"></path>
+                          <rect
+                            width="18"
+                            height="18"
+                            x="3"
+                            y="4"
+                            rx="2"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="exhibition-title">"История, которой можно гордиться"</h3>
+                  <div class="exhibition-details">
+                    <div class="exhibition-date">
+                      <span class="date-label">Дата:</span>
+                      <span class="date-value">7 октября 2025г</span>
+                    </div>
+                    <div class="exhibition-venue">
+                      <span class="venue-label">Место:</span>
+                      <span class="venue-value">Филиал №5 ГВКГ им. Н.Н.Бурденко</span>
+                    </div>
+                  </div>
+                  <p class="exhibition-description">
+                    Мероприятие для участников СВО,находящихся в стационаре гиспиталя.
+                    В программе - показ документального фильма  "Родословная"  о жизни семьи российских художников - Новиковых.
+                  </p>
+                  <button class="btn btn-secondary">Узнать больше</button>
+                  </button>
+                </div>
+              </article>
+
+              <article class="exhibition-card">
+                <div class="card-image">
+                  <img
+                    src="33.jpg"
+                    alt="Линия памяти exhibition"
+                    class="exhibition-image"
+                  />
+                  <div class="card-overlay">
+                    <div class="exhibition-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="M8 2v4m8-4v4"></path>
+                          <rect
+                            width="18"
+                            height="18"
+                            x="3"
+                            y="4"
+                            rx="2"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="exhibition-title">«Мастерская у фонтана»</h3>
+                  <div class="exhibition-details">
+                    <div class="exhibition-date">
+                      <span class="date-label">Дата:</span>
+                      <span class="date-value">
+                        20 августа 2025г
+                      </span>
+                    </div>
+                    <div class="exhibition-venue">
+                      <span class="venue-label">Место:</span>
+                      <span class="venue-value">
+                        Подольский район
+                      </span>
+                    </div>
+                  </div>
+                  <p class="exhibition-description">
+                    На мероприятии юные свечевары выяснили все секреты «своей профессии»: выбор правильных фитилей, оптимальная температура заливки, аккуратный ввод отдушек и красителя, различные способы декорирования и многое другое.
+                  </p>
+                  <a href="https://dkmol.ru/20-avgusta-2025-v-parke-doma-kultury-molodjozhnyj-sostoyalas-ocherednaya-vstrecha-iz-cikla-masterskaya-u-fontana/" target="_blank">
+                    <button class="btn btn-secondary">Узнать больше</button>
+                  </a>
+                </div>
+              </article>
+
+              <article class="exhibition-card">
+                <div class="card-image">
+                  <img
+                    src="44.jpg"
+                    alt="Эстетика времени exhibition"
+                    class="exhibition-image"
+                  />
+                  <div class="card-overlay">
+                    <div class="exhibition-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="M8 2v4m8-4v4"></path>
+                          <rect
+                            width="18"
+                            height="18"
+                            x="3"
+                            y="4"
+                            rx="2"
+                          ></rect>
+                          <path d="M3 10h18"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="exhibition-title">«Мастер-класс по изготовлению свечей»</h3>
+                  <div class="exhibition-details">
+                    <div class="exhibition-date">
+                      <span class="date-label">Дата:</span>
+                      <span class="date-value">
+                        9 июня 2025г
+                      </span>
+                    </div>
+                    <div class="exhibition-venue">
+                      <span class="venue-label">Место:</span>
+                      <span class="venue-value">
+                        Коворкинг-центр НКО СЗАО
+                      </span>
+                    </div>
+                  </div>
+                  <p class="exhibition-description">
+                    Под руководством мастера Ксении Казаковой-Новиковой участницы создали ароматные свечи с запахом кофе, познакомились с историей творчества семьи художников Новиковых, пообщались за чашкой чая и зарядились положительными эмоциями.
+                  </p>
+                  <a href="https://t.me/russcpa/5468?single" target="_blank">
+                    <button class="btn btn-secondary">Узнать больше</button>
+                  </a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section id="gallery" class="gallery-section">
+          <div class="gallery-container">
+            <div class="section-header">
+              <h2 class="section-title">Наследие в кадре</h2>
+              <p class="section-subtitle">
+                Избранные работы и архивы семьи Новиковых
+              </p>
+            </div>
+            <div class="gallery-grid">
+              <div class="gallery-item large">
+                <img
+                  src="54.jpg"
+                  alt="Палитра художника"
+                />
+                <div class="gallery-overlay">
+                  <p class="gallery-description">
+                    «Золотые шары и ромашки» акварель,Новикова Н.М. 1983г»
+                  </p>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="55.jpg"
+                  alt="Руки в краске"
+                />
+                <div class="gallery-overlay">
+                  <p class="gallery-description">«Васильки и верба» акварель,Новикова Н.М. 1979г</p>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="56.jpg"
+                  alt="Живопись синими красками"
+                />
+                <div class="gallery-overlay">
+                  <p class="gallery-description">
+                    «Пионы» акварель,Новикова Н.М. 1990г
+                  </p>
+                </div>
+              </div>
+              <div class="gallery-item wide">
+                <img
+                  src="57.jpg"
+                  alt="Смешивание красок"
+                />
+                <div class="gallery-overlay">
+                  <p class="gallery-description">
+                    «Бархатцы акварель», Новикова Н.М. 1994г
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="team" class="team-section">
+          <div class="team-container">
+            <div class="section-header">
+              <h2 class="section-title">Наша команда</h2>
+              <p class="section-subtitle">
+                Профессионалы, посвятившие себя служению творчеству и искусству
+              </p>
+            </div>
+            <div class="team-grid">
+              <div class="team-member">
+                <div class="artwork-frame">
+                  <img
+                    src="000.jpg"
+                    alt="Ксения Казакова-Новикова"
+                    class="member-photo"
+                  />
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Ксения Казакова-Новикова</h3>
+                  <p class="member-role">Основатель и руководитель фонда</p>
+                  <p class="member-description">
+                    За время существования Фонда провела более
+50-ти социально-значимых проектов: мастер-классы,
+выставки, благотворительные ярмарки. Сняла патриотический
+документальный фильм "Родословная",
+который посмотрели более 10 000 московских
+школьников. Фильм получил кинопремию фестиваля Волгоградский
+факел. Образование: Высшее. РНИМУ им.
+Н.И. Пирогова ,
+факультет Социальная
+безопасность,
+Магистратура (2025 -
+по н.в.). МГУС,
+факультет Социально-
+культурный сервис,
+Специалитет(2009)
+                  </p>
+                </div>
+              </div>
+              <div class="team-member">
+                <div class="artwork-frame">
+                  <img
+                    src="команда 1.jpg"
+                    alt="Имя Фамилия"
+                    class="member-photo"
+                  />
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Татьяна Исаева</h3>
+                  <p class="member-role">Арт - терапевт, педагог</p>
+                  <p class="member-description">
+                    Руководитель кружков первой категории в ОКЦ ЦАО г. Москвы. Дизайнер. Преподаватель рукоделия и творчества . Профессиональная актриса театра и кино. Организатор благотворительных ярмарок, участник и победитель медиа- проекта «Город неравнодушных.Суперсила»
+                  </p>
+                </div>
+              </div>
+              <div class="team-member">
+                <div class="artwork-frame">
+                  <img
+                    src="кккк.jpg"
+                    alt="Имя Фамилия"
+                    class="member-photo"
+                  />
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Ангелина Мясникова</h3>
+                  <p class="member-role">Арт - терапевт, педагог</p>
+                  <p class="member-description">
+                    Практикующий психолог (Московский Институт Психоанализа). Имеет практический опыт проведения групповой арт-терапии как со взрослыми, так и с детьми.
+                  </p>
+                </div>
+              </div>
+
+              <div class="team-member">
+                <div class="artwork-frame">
+                  <img
+                    src="334.PNG"
+                    alt="Имя Фамилия"
+                    class="member-photo"
+                  />
+                </div>
+                <div class="member-info">
+                  <h3 class="member-name">Григорий Островский</h3>
+                  <p class="member-role">Эксперт Фонда</p>
+                  <p class="member-description">
+                    Советник Генерального директора ФКП «Росгосцирк», заместитель председателя Союза цирковых деятелей России.
+Образование: Московское художественно-промышленное училище им. М.И. Калинина, отделение скульптуры. Работал в секторе Экономики и социологии искусства Государственного института искусствознания (2001–2014 гг.).
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <footer-wrapper class="footer-wrapper">
+          <div class="footer-container1">
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <style>
+                  @keyframes heartbeat {0%,100% {transform: scale(1);} 50% {transform: scale(1.1);}}
+                </style>
+              </div>
+            </div>
+            <div class="footer-container4">
+              <div class="footer-container5">
+                <script src="./footer.js" defer=""></script>
+              </div>
+            </div>
+            <footer class="footer">
+              <div aria-hidden="true" class="footer__background-overlay"></div>
+              <div class="footer__content">
+                <div class="footer__mission">
+                  <div class="footer__logo-container">
+                    <h2 class="footer__logo-text">Novikov Legacy</h2>
+                  </div>
+                  <p class="footer__mission-text">
+                    Сохраняем Российское культурное наследие. Наша задача — делиться богатым художественным
+                    наследием с будущими поколениями через выставки, творческие занятия и
+                    благотворительные программы.
+                  </p>
+                </div>
+                <div class="footer__navigation">
+                  <div class="footer__nav-column">
+                    <h3 class="footer__nav-title">О Фонде</h3>
+                    <ul class="footer__nav-list">
+                      <li>
+                        <a href="#about">
+                          <div class="footer__nav-link">
+                            <span>О Фонде</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#hero">
+                          <div class="footer__nav-link">
+                            <span>Главная</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#exhibitions">
+                          <div class="footer__nav-link">
+                            <span>Проекты</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer__nav-column">
+                    <h3 class="footer__nav-title">Деятельность</h3>
+                    <ul class="footer__nav-list">
+                      <li>
+                        <span class="footer__nav-link footer__nav-link--disabled">
+                          Мастер-классы
+                        </span>
+                      </li>
+                      <li>
+                        <span class="footer__nav-link footer__nav-link--disabled">
+                          Творческие семинары
+                        </span>
+                      </li>
+                      <li>
+                        <span class="footer__nav-link footer__nav-link--disabled">
+                          Благотворительность
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="footer__contact">
+                  <h3 class="footer__contact-title">Свяжитесь с нами</h3>
+                  <div class="footer__contact-info">
+                    <div class="footer__contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="footer__contact-icon"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        </g>
+                      </svg>
+                      <span class="footer__contact-text">
+                        kseniakonovalova.1983@gmail.com
+                      </span>
+                    </div>
+                    <div class="footer__contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="footer__contact-icon"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                        ></path>
+                      </svg>
+                      <span class="footer__contact-text">
+                        +7 (916) 287-44-36
+                      </span>
+                    </div>
+                    <div class="footer__contact-item">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="footer__contact-icon"
+                      >
+                        <g
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        >
+                          <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </g>
+                      </svg>
+                      <span class="footer__contact-text">Москва, Россия</span>
+                    </div>
+                  </div>
+                  <div class="footer__social">
+                    <h4 class="footer__social-title">Мы в соцсетях</h4>
+                    <div class="footer__social-links">
+                      <a href="https://t.me/novikovagallery" target="_blank">
+                        <div aria-label="Telegram" class="footer__social-link">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="social-icon">
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div aria-label="Instagram" class="footer__social-link">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div aria-label="VK" class="footer__social-link">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="VK" class="social-icon">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <div class="footer__bottom-content">
+                  <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                      © 2025 Фонд творческого наследия художников Новиковых. Все права защищены.
+                    </p>
+                    <p class="footer__founded">
+                      Основан в 2017 году под руководством Ксении
+                      Казаковой-Новиковой
+                    </p>
+                  </div>
+                  <div class="footer__heart-container">
+                    <span class="footer__made-with">Создано с</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      class="footer__heart-icon"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676a.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                      ></path>
+                    </svg>
+                    <span class="footer__for-art">для искусства</span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </footer-wrapper>
+      </div>
+    </div>
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div class="modal-caption" id="modalCaption"></div>
+      <button class="modal-nav modal-prev">&#10094;</button>
+      <button class="modal-nav modal-next">&#10095;</button>
+    </div>
+    <script src="./gallery.js"></script>
+  </body>
+</html>

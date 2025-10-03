@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Благодарности - Novikov Legacy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --color-surface: #0d0e12;
+            --color-on-surface: #f5f9fa;
+            --color-primary: #8e5cf0;
+            --color-border: #8e5cf0;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --border-radius-lg: 16px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Merriweather', serif;
+            background: var(--color-surface);
+            color: var(--color-on-surface);
+            line-height: 1.6;
+        }
+        
+        .gratitude-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-lg);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: var(--spacing-xl);
+            padding: 0.5rem 1rem;
+            border: 1px dashed var(--color-primary);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: rgba(142, 92, 240, 0.1);
+            transform: translateX(-5px);
+        }
+        
+        .page-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: var(--spacing-xl);
+            color: var(--color-on-surface);
+            font-family: 'Cinzel', serif;
+        }
+        
+        .gratitude-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .gratitude-frame {
+            border: 3px dashed var(--color-primary);
+            border-radius: var(--border-radius-lg);
+            padding: 16px;
+            background: var(--color-surface);
+            transform: rotate(-1deg);
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 32px rgba(142, 92, 240, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gratitude-frame:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+        
+        .gratitude-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .gratitude-image {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            max-height: 566px;
+            object-fit: contain;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .gratitude-link:hover .gratitude-image {
+            transform: scale(1.05);
+        }
+        
+        .gratitude-caption {
+            text-align: center;
+            margin-top: 1rem;
+            color: var(--color-on-surface);
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        
+        .gratitude-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .gratitude-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .gratitude-frame {
+                padding: 12px;
+            }
+            
+            .gratitude-image {
+                max-width: 100%;
+                max-height: 400px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gratitude-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gratitude-image {
+                max-height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gratitude-container">
+        <a href="index.html" class="back-button">
+            ← Назад на главную
+        </a>
+        
+        <h1 class="page-title">Благодарности,сертификаты и дипломы</h1>
+        
+        <div class="gratitude-grid">
+            <div class="gratitude-item">
+                <div class="gratitude-frame">
+                    <a href="blagad1p.PDF" target="_blank" class="gratitude-link">
+                        <img src="blagad1.PNG" alt="Благодарственное письмо 1" class="gratitude-image">
+                    </a>
+                </div>
+                <p class="gratitude-caption">Благодарность МДОО</p>
+            </div>
+            
+            <div class="gratitude-item">
+                <div class="gratitude-frame">
+                    <a href="blagad2p.PDF" target="_blank" class="gratitude-link">
+                        <img src="blagad2.PNG" alt="Благодарственное письмо 2" class="gratitude-image">
+                    </a>
+                </div>
+                <p class="gratitude-caption">Благодарственное письмо онкопациенты </p>
+            </div>
+            
+            <div class="gratitude-item">
+                <div class="gratitude-frame">
+                    <a href="blagad3p.PDF" target="_blank" class="gratitude-link">
+                        <img src="blagad3.PNG" alt="Благодарственное письмо 3" class="gratitude-image">
+                    </a>
+                </div>
+                <p class="gratitude-caption">Обучение в выездной лаборатории "НКО Лаб"</p>
+            </div>
+            
+            <div class="gratitude-item">
+                <div class="gratitude-frame">
+                    <a href="blagad4p.PDF" target="_blank" class="gratitude-link">
+                        <img src="blagad4.PNG" alt="Благодарственное письмо 4" class="gratitude-image">
+                    </a>
+                </div>
+                <p class="gratitude-caption">Диплом Кинофестиваля фильм Родословная</p>
+            </div>
+            
+            <div class="gratitude-item">
+                <div class="gratitude-frame">
+                    <a href="blagad5p.PDF" target="_blank" class="gratitude-link">
+                        <img src="blagad5.PNG" alt="Благодарственное письмо 5" class="gratitude-image">
+                    </a>
+                </div>
+                <p class="gratitude-caption">Московские мастера диплом участника</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
